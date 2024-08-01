@@ -1,6 +1,11 @@
 import { PokemonGrid, PokemonsResponse, SimplePokemon } from "@/pokemons";
 import { notFound } from "next/navigation";
 
+export const metadata = {
+  title: '151 Pokemons',
+  description: 'Pokedex page'
+}
+
 
 
 const getPokemons = async( limit = 20, offset = 0 ):Promise<SimplePokemon[]> => {
